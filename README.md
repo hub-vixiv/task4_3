@@ -1,1 +1,2 @@
-##Classを使って、簡易PosRegi
+##Class(ヒントなし分)を使って、簡易PosRegi
+
