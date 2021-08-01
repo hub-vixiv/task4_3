@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MiniRegi</title>
+  <link rel="stylesheet" href="https;//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script type="text/javascript" language="javascript" src="./js/script.js" defer></script>
+  <!-- EelのJSの読み込み -->
+  <script type="text/javascript" src="/eel.js"></script>
+   <!-- BootstrapのCSS読み込み -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <!-- jQuery読み込み(BootstrapのJSより先に読み込む) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- BootstrapのJS読み込み -->
+   <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+  <h1>Mini Pos</h1>
+  </header>
+
+  <main>
+    <div class="order_area">
+    <p class="infomation">商品コードと数を入力して注文ボタンを押してください</p>
+    <table class="order_table">
+        <tr>
+          <td>商品コード</td>
+          <td>商品名</td>
+          <td>単価</td>
+          <td>数</td>
+        </tr>
+        <tr>
+          <td class="content"><input type="text" id="item_code"></td>
+          <td class="content"><label id="item_name"></label></td>
+          <td class="content"><label for="" id="price"></label></td>
+          <td class="content"><input type="text" id="quantity"></td>
+          <td class="content_btn"><button type="button" class="btn" id="btn_order" disabled onclick="btn_order_click();">注文</button></td>
+        </tr>
+    </table>
+    </div>
+    <div class="wrap">
+
+      <div class="item_list">
+        <h3>商品リスト</h3>
+        <div id="master_list">
+          <!-- ここにマスターリストを表示 -->
+        </div>
+      </div>
+  
+        <div class="ordered_area">
+          
+          <textarea id="ordered_textarea" class="ordered_list" cols="45" readonly ></textarea>
+    
+          <table class="billing">
+            <tr>  <td>合　計</td>  <td><span id="total"></span></td> <td>円</td> <td></td></tr>
+            <tr>  <td>お預り</td>  <td><span id="atention">※金額を入力してエンター</span><br><input type="text" id="deposit"></td><td>円</td>  </tr>
+            <tr>  <td>おつり</td>  <td><span id="change"></span></td><td>円</td>  </tr>
+          </table>
+          <div class="button_area">
+            <button type="button" class="btn" id="btn_change"  onclick="btn_change_click();">お釣りを計算</button>
+            <button type="button" class="btn" id="btn_receipt" onclick="btn_receipt_click();">レシートを出力</button>
+          </div>
+  
+        </div>
+    </div>
+
+    </main>
+
+    <footer class="footer">
+    </footer>
+
+</body>
+</html>

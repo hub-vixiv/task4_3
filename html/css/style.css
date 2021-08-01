@@ -1,0 +1,185 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  color: #36b;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+input[type="text"], input[type="button"], textarea, button {
+  border-radius: 6px;
+  border: 3px solid #36b;
+  background-color: #fff;
+}
+
+.btn {
+  padding: 5px;
+  height: 30px;
+  line-height: 1.2em;
+  color: #36b;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  box-shadow: #aaa 2px 2px 5px;
+}
+
+.btn:active {
+  transform: translate(2px, 2px);
+}
+
+input[type="text"] {
+  width: 100px;
+  height: 30px;
+  box-shadow: 0 0 3px 1px gray inset;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  box-shadow: none;
+}
+
+header {
+  margin: 10px;
+}
+
+header h1 {
+  margin: 10px auto 5px;
+  width: 600px;
+  color: #fff;
+  border: 5px solid #36b;
+  border-radius: 6px;
+  text-align: center;
+  background-color: #36b;
+}
+
+main {
+  margin: 0px auto;
+  background-color: #fff;
+}
+
+main h3 {
+  text-align: center;
+}
+
+.wrap {
+  display: flex;
+}
+
+.dataframe {
+  border: none;
+  margin: 20px auto 10px;
+  text-align: center;
+  table-layout: fixed;
+  font-size: 12px;
+}
+
+.dataframe th {
+  text-align: center;
+}
+
+.dataframe tr {
+  height: 30px;
+}
+
+.dataframe td {
+  width: 150px;
+}
+
+.dataframe td:not(:nth-child(2)) {
+  width: 50px;
+}
+
+.order_area {
+  justify-content: center;
+}
+
+.order_area p {
+  text-align: center;
+}
+
+.order_area .order_table {
+  margin-bottom: 10px;
+  text-align: center;
+  border: 2px solid #36b;
+  border-radius: 6px;
+}
+
+.order_area .order_table td:nth-child(2) {
+  width: 150px;
+}
+
+.order_area .order_table td:not(:nth-child(2)) {
+  width: 80px;
+}
+
+#ordered_textarea {
+  display: block;
+  height: 150px;
+  padding: 5px 10px;
+  font-size: 18px;
+  text-align: right;
+}
+
+#btn_order_stop {
+  display: block;
+  width: 350px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.billing {
+  margin: 0 auto;
+  border: none;
+}
+
+.billing td {
+  margin: 0;
+  border-bottom: 2px solid #000;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.billing td:first-of-type {
+  width: 80px;
+  height: 40px;
+}
+
+.billing td:nth-child(2) {
+  width: 250px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.billing .atention {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.billing #diposit {
+  text-align: right;
+  width: 150px;
+}
+
+.button_area {
+  margin: 10px auto 0;
+  text-align: center;
+}
+
+.button_area .btn {
+  width: 150px;
+}
+/*# sourceMappingURL=style.css.map */
